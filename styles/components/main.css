@@ -1,0 +1,49 @@
+.main{
+    width: 100%;
+    height: auto;
+    background: radial-gradient(#2d2048, #20244c, #1e2346, #2a2046);
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.main_container{
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.main_container-img{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.main_image-container{
+    width: 100%;
+    height: 500px;
+}
+
+.image-custom{
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main_container{
+        display: flex;
+        padding-top: 100px;
+    }
+
+    .main_container-img{
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_container{
+        width: 1300px;
+    }
+}

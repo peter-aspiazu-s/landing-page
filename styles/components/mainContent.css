@@ -1,0 +1,133 @@
+.main-content{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content_text-atention{
+    color: aliceblue;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.main-content_text-title{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-content_text-charact{
+    color: aliceblue;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content_items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-content_image{
+    margin-right: 10px;
+    background-color: #e31b53;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.main-content_item-text{
+    color: aliceblue;
+}
+
+.main-content_desc{
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.main-content_price{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: underline 10px #e31b53;
+    margin-bottom: 20px;
+}
+
+.main-content_hosting{
+    color: aliceblue;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.main-content_button{
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 0;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .main-content{
+        padding: 20px 50px;
+    }
+
+    .main-content_text-atention{
+        font-size: 16px;
+    }
+
+    .main-content_text-charact{
+        font-size: 22px;
+    }
+
+    .main-content_items{
+        padding-left: 30px;
+    }
+
+    .main-content_item-text{
+        font-size: 20px;
+    }
+
+    .main-content_button{
+        align-self: flex-start;
+        width: 400px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main-content_button:hover{
+        background-color: aliceblue;
+        color: #20244c;
+        box-shadow: 1px 1px 10px 5px #e31b53;
+        transition: all .3s;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .main-content_text-title{
+        font-size: 80px;
+    }
+
+    .main-content_text-charact{
+        font-size: 30px;
+    }
+
+    .main-content_item-text{
+        font-size: 25px;
+    }
+
+    .main-content_desc{
+        font-size: 20px;
+    }
+
+    .main-content_price{
+        font-size: 50px;
+    }
+}

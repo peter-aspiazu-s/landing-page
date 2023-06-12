@@ -1,0 +1,28 @@
+.nav-item-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .nav-item-desktop{
+        display: block;
+        width: 700px;
+        height: 70px;
+    }
+    
+    .nav-item-desktop_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-item-desktop_option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        color: aliceblue;
+        cursor: pointer;
+    }
+}

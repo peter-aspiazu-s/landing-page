@@ -1,0 +1,126 @@
+.service-card{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 5px #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.service-card_category{
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 10px;
+    border-bottom: 2px solid #e3e3e3;
+    color: #333333;
+}
+
+.service-card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.service-card_desc{
+    width: 200px;
+    background-color: #caf0e8;
+    color: #0f766d;
+    border-radius: 30px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.service-card_old-prince{
+    color: #969595;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.service-card_new-prince{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #333333;
+}
+
+.service-card_item{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+.service-card_button{
+    border: 0;
+    background-color: #e31b53;
+    color: aliceblue;
+    width: 95%;
+    border-radius: 10px;
+    padding: 20px 0;
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .service-card{
+        width: 500px;
+    }
+
+    .service-card_category{
+        font-size: 25px;
+    }
+
+    .service-card_button{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .service-card{
+        width: 300px;
+    }
+
+    .service-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 1px 1px 10px 10px #e3e3e3;
+        transition: all .3s;
+    }
+
+    .service-card_old-prince{
+        font-size: 16px;
+    }
+
+    .service-card_item{
+        font-size: 15px;
+    }
+
+    .service-card_button{
+        width: 270px;
+        cursor: pointer;
+    }
+
+    .service-card_button:hover{
+        background-color: #1e2346;
+        transition: all .3s;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .service-card{
+        width: 400px;
+    }
+}

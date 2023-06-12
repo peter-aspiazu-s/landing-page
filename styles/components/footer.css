@@ -1,0 +1,127 @@
+.footer{
+    background-color: #11111b;
+}
+
+.footer_container{
+    padding: 50px 30px;
+}
+
+.footer_title{
+    font-size: 40px;
+    text-align: center;
+    color: #e31b53;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 1px aliceblue;
+}
+
+.footer_container-items{
+    border-bottom: 1px solid #3e3e3e;
+    margin-bottom: 30px;
+}
+
+.footer_options{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_item-title{
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer_item{
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer_copy{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer_container-privacy{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_privacy, .footer_info{
+    color: aliceblue;
+}
+
+@media screen and (min-width: 425px){
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_container{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .footer_container{
+        width: 700px;
+    }
+
+    .footer_title{
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
+
+    .footer_container-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    .footer_container-copy-privacy{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_copy{
+        width: 50%;
+        text-align: left;
+    }
+    
+    .footer_container-privacy{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .footer_privacy{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .footer_container{
+        width: 900px;
+    }
+
+    .footer_item{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .footer_container{
+        width: 1200px;
+    }
+}
