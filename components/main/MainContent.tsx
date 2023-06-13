@@ -1,7 +1,32 @@
-import {FC} from 'react';
-import Image from 'next/image';
+import {FC, useEffect, useRef, Dispatch, SetStateAction} from 'react';
 
-export const MainContent:FC = ():JSX.Element => {
+interface Props {
+  setValuePosition: Dispatch<SetStateAction<number>>
+}
+
+export const MainContent:FC<Props> = ({setValuePosition}):JSX.Element => {
+
+  const targetRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      if (targetRef.current) {
+        const { top } = targetRef.current.getBoundingClientRect();
+        setValuePosition(top);
+      }
+    };
+
+    updatePosition();
+
+    window.addEventListener('scroll', updatePosition);
+
+    // Limpiar el event listener cuando el componente se desmonte
+    return () => {
+      window.removeEventListener('scroll', updatePosition);
+    };
+
+  },[]);
+
   return (
     <div className='main-content'>
         <div className='main-content_text-atention'>IMPULSA TU NEGOCIO CON UN SITIO WEB</div>
@@ -19,9 +44,14 @@ export const MainContent:FC = ():JSX.Element => {
           <div className='main-content_item-icon'>🎁</div>
           <div className='main-content_item-text'>¡Obtén un 20% de descuento! Aprovecha esta oferta exclusiva y obtén tu sitio web por menos.</div>
         </div>
-        <div className='main-content_price'>Sitios web desde $250</div>
+        <div className='main-content_price'>Sitios web desde $240</div>
         <div className='main-content_hosting'>💼Nuestros precios accesibles te permiten tener presencia en línea sin comprometer la calidad. Además, incluimos <strong>hosting y dominio por 1 año.</strong></div>
-        <a className='main-content_button' href="https://wa.link/iq3sg8" target='_blank'>Contactar Ahora!</a>
+        <a 
+          className='main-content_button' 
+          href="https://wa.link/iq3sg8" 
+          target='_blank'
+          ref={targetRef}
+        >Contactar Ahora!</a>
     </div>
   )
 }

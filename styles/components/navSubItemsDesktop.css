@@ -10,6 +10,18 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
+    animation: fallingAnimation .8s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes fallingAnimation {
+    0% {
+        height: 0;
+      }
+
+    100% {
+        height: 700px;
+    }
 }
 
 .nav-sub-items-desktop_container{
@@ -52,6 +64,16 @@
 @media screen and (min-width: 1440px){
     .nav-sub-items-desktop{
         height: 500px;
+    }
+
+    @keyframes fallingAnimation {
+        0% {
+            height: 0;
+          }
+    
+        100% {
+            height: 500px;
+        }
     }
 
     .nav-sub-items-desktop_container{

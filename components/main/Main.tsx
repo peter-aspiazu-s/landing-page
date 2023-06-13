@@ -1,8 +1,12 @@
-import {FC} from 'react';
+import {FC, Dispatch, SetStateAction} from 'react';
 import Image from 'next/image';
 import { MainContent } from './MainContent';
 
-export const Main:FC = ():JSX.Element => {
+interface Props {
+  setValuePosition: Dispatch<SetStateAction<number>>
+}
+
+export const Main:FC<Props> = ({setValuePosition}):JSX.Element => {
 
   return (
     <div className='main'>
@@ -21,7 +25,7 @@ export const Main:FC = ():JSX.Element => {
           </div>
         </div>
         
-        <MainContent />
+        <MainContent setValuePosition={setValuePosition} />
       </div>
     </div>
   )

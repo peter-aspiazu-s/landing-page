@@ -86,7 +86,11 @@
     .header{
         justify-content: center;
         align-items: center;
+    }
+
+    .header_background{
         background-color: #1e1e2f;
+        transition: all .3s;
     }
 
     .header_logo-container{

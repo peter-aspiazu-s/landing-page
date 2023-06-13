@@ -1,0 +1,42 @@
+.service-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-logo_container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-logo_text{
+    text-align: justify;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.service-logo_link{
+    color: #e31b53;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    .service-logo_container{
+        width: 900px;
+    }
+
+    .service-logo_text{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .service-logo_link{
+        font-size: 30px;
+    }
+}

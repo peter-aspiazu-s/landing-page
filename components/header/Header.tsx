@@ -1,8 +1,15 @@
-import {FC, useState} from 'react';
+import {FC, RefObject, useState} from 'react';
 import { NavItem } from './NavItem';
 import { NavItemsDesktop } from './NavItemsDesktop';
 
-export const Header:FC = ():JSX.Element => {
+interface Props {
+    refValue: RefObject<HTMLDivElement> | undefined;
+    valuePosition: number;
+}
+
+export const Header:FC<Props> = ({refValue, valuePosition}):JSX.Element => {
+
+    console.log({valuePosition}, 'desde Header');
 
     const [menuIsActive, setMenuIsActive] = useState(false);
 
@@ -11,7 +18,7 @@ export const Header:FC = ():JSX.Element => {
     }
 
   return (
-    <div className='header'>
+    <div className={(valuePosition <= 600) ? 'header header_background' : 'header'}>
         <div className='header_logo-container'>
             <div className='header_logo-text'>Aspiazu Technology</div>
         </div>
@@ -26,11 +33,11 @@ export const Header:FC = ():JSX.Element => {
 
         {
             menuIsActive &&
-            <NavItem />
+            <NavItem refValue={refValue} setMenuIsActive={setMenuIsActive} />
         }
 
         {/* DESKTOP MENU */}
-        <NavItemsDesktop />
+        <NavItemsDesktop refValue={refValue} />
 
     </div>
   )

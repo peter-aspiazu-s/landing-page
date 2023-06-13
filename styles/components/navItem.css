@@ -1,7 +1,7 @@
 .nav-item{
     position: fixed;
-    top: 70px;
     background-color: #1e1e2f;
+    top: 70px;
     width: 100%;
     height: auto;
     max-height: auto;
@@ -30,6 +30,13 @@
     font-size: 20px;
     color: aliceblue;
     padding: 20px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    -webkit-touch-callout: none; /* Desactiva el menú contextual en iOS */
+    -webkit-tap-highlight-color: transparent;
 }
 
 .expand{
@@ -39,12 +46,25 @@
 
 .nav-item_options-items_container{
     width: 100%;
+    height: 340px;
     background-color: aliceblue;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fallingMobileAnimation .8s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes fallingMobileAnimation {
+    0% {
+        height: 0;
+      }
+
+    100% {
+        height: 340px;
+    }
 }
 
 .nav-item_options-item{

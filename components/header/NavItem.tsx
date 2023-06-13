@@ -1,6 +1,11 @@
-import { FC, useState } from 'react';
+import { FC, useState, RefObject, Dispatch, SetStateAction } from 'react';
 
-export const NavItem:FC = ():JSX.Element => {
+interface Props {
+    refValue: RefObject<HTMLDivElement> | undefined;
+    setMenuIsActive: Dispatch<SetStateAction<boolean>>;
+}
+
+export const NavItem:FC<Props> = ({refValue, setMenuIsActive}):JSX.Element => {
 
     const [hostingIsActive, setHostingIsActive] = useState(false);
     const [domainIsActive, setDomainIsActive] = useState(false);
@@ -12,6 +17,25 @@ export const NavItem:FC = ():JSX.Element => {
     const handleDomainClick = () => {
         setDomainIsActive(!domainIsActive);
     }
+
+    const handleScroll = () => {
+        const scrollOffset = 70; // Ajusta este valor según tus necesidades
+        const targetPosition = refValue!.current!.offsetTop - scrollOffset;
+        setMenuIsActive(false);
+    
+        if (targetPosition !== undefined && refValue?.current) {
+          refValue.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+    
+          window.scrollBy({
+            top: targetPosition,
+            behavior: 'smooth',
+          });
+        }
+
+    };
 
   return (
     <div className='nav-item'>
@@ -53,7 +77,7 @@ export const NavItem:FC = ():JSX.Element => {
             </div>
 
             <div className='nav-item_container-options'>
-                <div className='nav-item_options'>Contacto</div>
+                <div className='nav-item_options' onClick={handleScroll}>Contacto</div>
             </div>
 
         </div>

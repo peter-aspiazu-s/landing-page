@@ -1,3 +1,4 @@
+import { RefObject, useEffect, useRef, useState } from 'react';
 import { NextPage } from "next";
 import Head from 'next/head';
 import { Header } from '../components/header/Header';
@@ -8,6 +9,18 @@ import { Footer } from '../components/footer/Footer';
 
 
 const HomePage:NextPage = ():JSX.Element => {
+
+  const [valuePosition, setValuePosition] = useState<number>(1000);
+
+  const [refValue, setRefValue] = useState<RefObject<HTMLDivElement>>();
+  const targetRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if(targetRef.current !== null){
+      setRefValue(targetRef)
+    }
+  }, [targetRef])
+
   return (
     <>
       <Head>
@@ -16,12 +29,12 @@ const HomePage:NextPage = ():JSX.Element => {
         <meta name="keywords" content="páginas web, sitios web, diseño web, desarrollo web, landing page, paginas de aterrizaje" />
       </Head>
 
-      <Header />
-      <Main />
+      <Header refValue={refValue} valuePosition={valuePosition} />
+      <Main setValuePosition={setValuePosition} />
 
       <Services />
 
-      <Form />
+      <Form targetRef={targetRef} />
 
       <Footer />
     </>

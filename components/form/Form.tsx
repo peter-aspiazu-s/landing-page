@@ -1,8 +1,12 @@
-import {ChangeEvent, FC, FormEvent, useState} from 'react';
+import {ChangeEvent, FC, FormEvent, useState, RefObject, useRef} from 'react';
 import Validator from 'validator';
 import Swal from 'sweetalert2'
 
-export const Form:FC = ():JSX.Element => {
+interface Props {
+  targetRef: RefObject<HTMLDivElement>;
+}
+
+export const Form:FC<Props> = ({targetRef}):JSX.Element => {
 
   const [ formValue, setFormValue ] = useState({
     name: '',
@@ -97,7 +101,7 @@ export const Form:FC = ():JSX.Element => {
   }
 
   return (
-    <div className='form'>
+    <div className='form' ref={targetRef}>
         <div className='form_container'>
             <div className='form_text'>Llena el formulario si deseas que me contacte contigo</div>
 

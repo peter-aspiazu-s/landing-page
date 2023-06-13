@@ -1,5 +1,6 @@
 import {FC} from 'react';
 import { ServiceCard } from './ServiceCard';
+import { ServiceLogo } from './ServiceLogo';
 
 export const Services:FC = ():JSX.Element => {
   return (
@@ -58,6 +59,8 @@ export const Services:FC = ():JSX.Element => {
                     buttonLink='https://wa.link/4ya0jq'
                 />
             </div>
+
+            <ServiceLogo />
         </div>
     </div>
   )
