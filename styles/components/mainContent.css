@@ -30,15 +30,20 @@
     margin-bottom: 20px;
 }
 
-.main-content_image{
+/* .main-content_image{
     margin-right: 10px;
     background-color: #e31b53;
     border-radius: 10px;
     padding: 2px;
-}
+} */
 
 .main-content_item-text{
     color: aliceblue;
+}
+
+.main-content_item-icon{
+    align-self: flex-start;
+    font-size: 20px;
 }
 
 .main-content_desc{
