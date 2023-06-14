@@ -27,6 +27,11 @@ const HomePage:NextPage = ():JSX.Element => {
         <title>Aspiazu Tech</title>
         <meta name="description" content="Servicio de creación de sitios web profesionales para todo tipo de negocio o emprendimiento" />
         <meta name="keywords" content="páginas web, sitios web, diseño web, desarrollo web, landing page, paginas de aterrizaje" />
+        
+        <meta property="og:title" content="Servicios de desarrollo web y diseño gráfico" />
+        <meta property="og:description" content="Somos desarrolladores web y diseñadores gráficos, brindamos nuestros servicios de calidad, personalizados y a un costo accesible." />
+        <meta property="og:image" content="/image/diseno-principal-redes.jpg" />
+        <meta property="og:url" content="https://aspiazu-technology.vercel.app/" />
       </Head>
 
       <Header refValue={refValue} valuePosition={valuePosition} />

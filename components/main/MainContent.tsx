@@ -44,7 +44,7 @@ export const MainContent:FC<Props> = ({setValuePosition}):JSX.Element => {
           <div className='main-content_item-icon'>🎁</div>
           <div className='main-content_item-text'>¡Obtén un 20% de descuento! Aprovecha esta oferta exclusiva y obtén tu sitio web por menos.</div>
         </div>
-        <div className='main-content_price'>Sitios web desde $240</div>
+        <div className='main-content_price'>Sitios web desde $280</div>
         <div className='main-content_hosting'>💼Nuestros precios accesibles te permiten tener presencia en línea sin comprometer la calidad. Además, incluimos <strong>hosting y dominio por 1 año.</strong></div>
         <a 
           className='main-content_button' 

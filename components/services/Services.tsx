@@ -29,8 +29,8 @@ export const Services:FC = ():JSX.Element => {
 
                 <ServiceCard 
                     category='Sitio Web' 
-                    oldPrice={300}
-                    newPrice={240}
+                    oldPrice={350}
+                    newPrice={280}
                     domainAmount={6}
                     gigas='15 GB'
                     ram='1 GB'
