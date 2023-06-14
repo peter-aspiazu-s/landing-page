@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {FC} from 'react';
 
 export const Footer:FC = ():JSX.Element => {
@@ -35,8 +36,9 @@ export const Footer:FC = ():JSX.Element => {
                 <div className='footer_copy'>&copy; 2019 - 2023 Aspiazu Technology</div>
 
                 <div className='footer_container-privacy'>
-                    <div className='footer_privacy'>Privacidad</div>
-                    <div className='footer_info'>Información legal</div>
+                    {/* <Link href="/privacy-policies"><div className='footer_privacy'>Privacidad</div></Link> */}
+                    <Link href="/privacy-policies" className='footer_privacy'>Privacidad</Link>
+                    <Link href="/privacy-policies" className='footer_info'>Información legal</Link>
                 </div>
             </div>
         </div>

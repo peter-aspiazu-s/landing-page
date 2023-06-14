@@ -47,10 +47,14 @@
 }
 
 .footer_container-privacy{
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.footer_container-privacy a{
+    text-decoration: none;
 }
 
 .footer_privacy, .footer_info{
