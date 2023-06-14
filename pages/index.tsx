@@ -30,6 +30,7 @@ const HomePage:NextPage = ():JSX.Element => {
         
         <meta property="og:title" content="Servicios de desarrollo web y diseño gráfico" />
         <meta property="og:description" content="Somos desarrolladores web y diseñadores gráficos, brindamos nuestros servicios de calidad, personalizados y a un costo accesible." />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="https://aspiazu-technology.vercel.app/images/diseno-principal-redes.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
