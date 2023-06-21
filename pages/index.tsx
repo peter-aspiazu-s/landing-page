@@ -7,6 +7,7 @@ import { Services } from '../components/services/Services';
 import { Form } from '../components/form/Form';
 import { Footer } from '../components/footer/Footer';
 import { ArticleInfo } from '../components/section/ArticleInfo';
+import { WhatsAppButton } from '../components/btnWs/WhatsAppButton';
 
 
 const HomePage:NextPage = ():JSX.Element => {
@@ -48,6 +49,8 @@ const HomePage:NextPage = ():JSX.Element => {
       <Form targetRef={targetRef} />
 
       <Footer />
+
+      <WhatsAppButton />
     </>
   )
 }
