@@ -1,0 +1,42 @@
+.services-benefis{
+    margin-top: 100px;
+}
+
+.services-benefis_service{
+    margin-bottom: 70px;
+}
+
+.services-benefis_container-img{
+    margin-bottom: 20px;
+}
+
+.services-benefis_title{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.services-benefis_description{
+    color: #333333;
+}
+
+@media screen and (min-width: 1024px){
+    .services-benefis_service{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-benefis_container-img{
+        width: 50%;
+    }
+
+    .service-benefis_order{
+        order: 1;
+    }
+
+    .services-benefis_container-text{
+        width: 50%;
+    }
+}

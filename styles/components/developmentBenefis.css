@@ -1,0 +1,16 @@
+.development-benefis{
+    margin-top: 60px;
+}
+
+.development-benefis_container{
+    margin-top: 30px;
+}
+
+.development-benefis_text{
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px){
+    
+}

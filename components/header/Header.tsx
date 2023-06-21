@@ -9,8 +9,6 @@ interface Props {
 
 export const Header:FC<Props> = ({refValue, valuePosition}):JSX.Element => {
 
-    console.log({valuePosition}, 'desde Header');
-
     const [menuIsActive, setMenuIsActive] = useState(false);
 
     const handleClickMenu = () => {

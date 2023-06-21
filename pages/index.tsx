@@ -6,6 +6,7 @@ import { Main } from '../components/main/Main';
 import { Services } from '../components/services/Services';
 import { Form } from '../components/form/Form';
 import { Footer } from '../components/footer/Footer';
+import { ArticleInfo } from '../components/section/ArticleInfo';
 
 
 const HomePage:NextPage = ():JSX.Element => {
@@ -41,6 +42,8 @@ const HomePage:NextPage = ():JSX.Element => {
       <Main setValuePosition={setValuePosition} />
 
       <Services />
+
+      <ArticleInfo />
 
       <Form targetRef={targetRef} />
 
