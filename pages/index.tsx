@@ -37,6 +37,8 @@ const HomePage:NextPage = ():JSX.Element => {
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="1080" />
         <meta property="og:url" content="https://aspiazu-technology.vercel.app/" />
+
+        <link rel="shortcut icon" href="/images/logo.png" />
       </Head>
 
       <Header refValue={refValue} valuePosition={valuePosition} />

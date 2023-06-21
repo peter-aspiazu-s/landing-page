@@ -1,6 +1,5 @@
 import {FC} from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export const WhatsAppButton:FC = ():JSX.Element => {
   return (
