@@ -28,7 +28,7 @@ const HomePage:NextPage = ():JSX.Element => {
       <Head>
         <title>Aspiazu Tech</title>
         <meta name="description" content="Servicio de creación de sitios web profesionales para todo tipo de negocio o emprendimiento" />
-        <meta name="keywords" content="páginas web, sitios web, diseño web, desarrollo web, landing page, paginas de aterrizaje" />
+        <meta name="keywords" content="Aspiazu Technology, Aspiazu Tech, Aspiazu, páginas web, sitios web, diseño web, desarrollo web, landing page, paginas de aterrizaje" />
         
         <meta property="og:title" content="Servicios de desarrollo web y diseño gráfico" />
         <meta property="og:description" content="Somos desarrolladores web y diseñadores gráficos, brindamos nuestros servicios de calidad, personalizados y a un costo accesible." />
