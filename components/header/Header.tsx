@@ -29,10 +29,7 @@ export const Header:FC<Props> = ({refValue, valuePosition}):JSX.Element => {
             </button>
         </div>
 
-        {
-            menuIsActive &&
-            <NavItem refValue={refValue} setMenuIsActive={setMenuIsActive} />
-        }
+        <NavItem refValue={refValue} setMenuIsActive={setMenuIsActive} menuIsActive={menuIsActive} />
 
         {/* DESKTOP MENU */}
         <NavItemsDesktop refValue={refValue} />

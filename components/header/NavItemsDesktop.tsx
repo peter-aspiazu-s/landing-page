@@ -43,7 +43,7 @@ export const NavItemsDesktop:FC<Props> = ({refValue}):JSX.Element => {
         <div className='nav-item-desktop_container'>
             <div className='nav-item-desktop_option' onClick={handleHostingClick}>
               Hosting
-              <svg className='expand' xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg> 
+              <svg className={`expand ${itemHostingIsActive ? 'expand-transform' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg> 
             </div>
             <div className='nav-item-desktop_option'>
               Dominios
@@ -52,10 +52,7 @@ export const NavItemsDesktop:FC<Props> = ({refValue}):JSX.Element => {
             <div className='nav-item-desktop_option' onClick={handleScroll}>Contacto</div>
         </div>
 
-        {
-          itemHostingIsActive &&
-          <NavSubItemsHostingDesktop />
-        }
+        <NavSubItemsHostingDesktop itemHostingIsActive={itemHostingIsActive} />
         {
           itemDomainIsActive &&
           <NavSubItemsDomainDesktop />

@@ -15,6 +15,7 @@ interface Props {
   textFive?: string;
   textSix?: string;
   textSeven?: string;
+  textDB?: string;
   buttonLink: string;
 }
 
@@ -33,6 +34,7 @@ export const ServiceCard:FC<Props> = ({
   textFive,
   textSix,
   textSeven,
+  textDB,
   buttonLink
 }):JSX.Element => {
   return (
@@ -59,6 +61,7 @@ export const ServiceCard:FC<Props> = ({
             <div className='service-card_item'>{textFive}</div>
             <div className='service-card_item'>{textSix}</div>
             <div className='service-card_item'><strong>{textSeven}</strong></div>
+            <div className='service-card_item'><strong>{textDB}</strong></div>
             <a 
               className='service-card_button'
               href={buttonLink}

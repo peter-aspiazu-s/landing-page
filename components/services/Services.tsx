@@ -25,6 +25,7 @@ export const Services:FC = ():JSX.Element => {
                     textFive='Información adicional relevante'
                     textSix='Soporte técnico y asistencia'
                     textSeven='Incluye Logotipo'
+                    textDB='Registros en Base de datos desde $50'
                     buttonLink='https://wa.link/gy97zg'
                 />
 
@@ -42,6 +43,7 @@ export const Services:FC = ():JSX.Element => {
                     textFive='Formulario de contacto'
                     textSix='Soporte técnico y asistencia'
                     textSeven='Incluye Logotipo'
+                    textDB='Registros en Base de datos desde $50'
                     buttonLink='https://wa.link/h47d87'
                     />
             

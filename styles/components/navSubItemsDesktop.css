@@ -1,6 +1,6 @@
 .nav-sub-items-desktop{
     width: 100%;
-    height: 700px;
+    max-height: 0px;
     position: fixed;
     top: 70px;
     left: 0;
@@ -9,26 +9,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 30px;
-    animation: fallingAnimation .8s ease-in-out;
     overflow: hidden;
+    transition: all .3s;
 }
 
-@keyframes fallingAnimation {
-    0% {
-        height: 0;
-      }
-
-    100% {
-        height: 700px;
-    }
+.nav-sub-items-desktop-active{
+    max-height: 700px;
+    padding-top: 30px;
 }
 
 .nav-sub-items-desktop_container{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    /* margin-bottom: 20px; */
 }
 
 .nav-sub-items-desktop_category{
@@ -61,19 +54,10 @@
     font-size: 16px;
 }
 
+
 @media screen and (min-width: 1440px){
     .nav-sub-items-desktop{
         height: 500px;
-    }
-
-    @keyframes fallingAnimation {
-        0% {
-            height: 0;
-          }
-    
-        100% {
-            height: 500px;
-        }
     }
 
     .nav-sub-items-desktop_container{

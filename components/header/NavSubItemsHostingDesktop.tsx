@@ -1,9 +1,16 @@
 import {FC} from 'react';
 import Image from 'next/image';
 
-export const NavSubItemsHostingDesktop:FC = ():JSX.Element => {
+interface Props {
+    itemHostingIsActive: boolean;
+}
+
+export const NavSubItemsHostingDesktop:FC<Props> = ({itemHostingIsActive}):JSX.Element => {
+
+    console.log(itemHostingIsActive);
+
   return (
-    <div className='nav-sub-items-desktop'>
+    <div className={`nav-sub-items-desktop ${itemHostingIsActive ? 'nav-sub-items-desktop-active' : ''}`}>
         <div className='nav-sub-items-desktop_container'>
             <div className='nav-sub-items-desktop_category'>Hosting Wordpress</div>
             <div className='nav-sub-items-desktop_category'>Hosting Web</div>

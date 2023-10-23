@@ -8,6 +8,7 @@ import { Form } from '../components/form/Form';
 import { Footer } from '../components/footer/Footer';
 import { ArticleInfo } from '../components/section/ArticleInfo';
 import { WhatsAppButton } from '../components/btnWs/WhatsAppButton';
+import { Work } from '@/components/work';
 
 
 const HomePage:NextPage = ():JSX.Element => {
@@ -45,6 +46,8 @@ const HomePage:NextPage = ():JSX.Element => {
       <Main setValuePosition={setValuePosition} />
 
       <Services />
+
+      <Work />
 
       <ArticleInfo />
 

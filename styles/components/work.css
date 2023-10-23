@@ -1,0 +1,194 @@
+.work{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#2d2048, #20244c, #1e2346, #2a2046);
+    padding: 50px 0;
+}
+
+.work-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.work-done-container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.work-container-done{
+    width: 100%;
+    padding: 40px 30px;
+    background-color: transparent;
+    border-bottom: 1px solid #dc1b53;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.work-container-title{
+    text-align: left;
+    color: #dc1b53;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.work-container-description{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.work-container-box{
+    width: 200px;
+    border: 1px solid #dc1b53;
+    /* padding: 5px 10px;  */
+    text-decoration: none;
+}
+
+.work-container-box-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-container-box-info div{
+    font-size: 15px;
+    color: #dc1b53;
+}
+
+.work-container-box-info svg{
+    width: 30px;
+    fill: #dc1b53;
+}
+
+.wrok-container-state{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.wrok-container-state button{
+    padding: 10px;
+}
+
+.work-container-btn{
+    background-color: transparent;
+    border: 1px solid #dc1b53;
+    color: #dc1b53;
+    transition: all .3s;
+}
+
+.work-container-btn-active{
+    background-color: #dc1b53;
+    color: aliceblue;
+    border: aliceblue;
+    transition: all .3s;
+}
+
+@media screen and (min-width: 768px){
+    .work-container{
+        gap: 30px;
+    }
+
+    .work-done-container{
+        flex-direction: row;
+    }
+
+    .work-container-done{
+        width: 50%;
+        height: 300px;
+        border-bottom: 0;
+    }
+    .work-container-done:nth-child(1){
+        border-right: 1px solid #dc1b53;
+    }
+
+    .wrok-container-state {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .work-container-done{
+        height: 400px;
+    }
+
+    .work-container-title{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .work-container-description{
+        margin-bottom: 30px;
+    }
+
+    .work-container-box-info{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .work-container-box-info div, .work-container-box-info svg{
+        position: relative;
+        z-index: 100;
+        font-size: 20px;
+    }
+
+    .work-container-box-info:hover div{
+        color: aliceblue;
+    }
+    .work-container-box-info:hover svg{
+        fill: aliceblue;
+    }
+    
+    .work-container-box-info::before{
+        content: '';
+        width: 101%;
+        height: 108%;
+        pointer-events: none;
+        z-index: 1;
+        position: absolute;
+        top: -0.1em;
+        left: 0;
+        right: 0;
+        background: transparent;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    .work-container-box-info:hover::before{
+        background: #dc1b53;
+        transform: translateX(0);
+    }
+    
+    .wrok-container-state button{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    .work-container{
+        width: 1100px;
+    }
+}
