@@ -1,5 +1,6 @@
 import {FC, useState} from 'react';
 
+
 const infoWorkOne = [
     
     {
@@ -21,24 +22,19 @@ const infoWorkTwo = [
         link: 'https://www.solutions-as.com/'
     },
     {
+        title: 'Proyecto de King Clean',
+        description: 'Este sitio web lo realice con NextJS, TypeScript y css (animaciones con css también aplique)',
+        link: 'https://king-clean.vercel.app/'
+    }
+]
+
+const infoWorkThree = [
+    {
         title: 'Proyecto para EJC',
         description: 'Este sitio web lo realice con NextJS, TypeScript y Material UI',
         link: 'https://www.ejc-home.com/'
     }
 ]
-
-// const infoWorkThree = [
-//     {
-//         title: 'Mi Sitio Web',
-//         description: 'Este sitio web lo realice con NextJS, TypeScript y CSS3',
-//         link: 'https://aspiazu-technology.vercel.app/'
-//     },
-//     {
-//         title: 'Proyecto de TodoApp',
-//         description: 'Esta aplicación web la realice con NextJS, TypeScript y css',
-//         link: 'https://aspiazu-todo-app.vercel.app/'
-//     },
-// ]
 
 
 export const Work: FC = () => {
@@ -53,9 +49,9 @@ export const Work: FC = () => {
         setWork(infoWorkTwo)
     }
 
-    // const handleClickWorkThree = () => {
-    //     setWork(infoWorkThree)
-    // }
+    const handleClickWorkThree = () => {
+        setWork(infoWorkThree)
+    }
 
   return (
     <div className='work'>
@@ -81,7 +77,7 @@ export const Work: FC = () => {
             <div className='wrok-container-state'>
                 <button onClick={handleClickWorkOne} className={work === infoWorkOne ? 'work-container-btn-active' : 'work-container-btn'}>1</button>
                 <button onClick={handleClickWorkTwo} className={work === infoWorkTwo ? 'work-container-btn-active' : 'work-container-btn'}>2</button>
-                {/* <button onClick={handleClickWorkThree} className={work === infoWorkThree ? 'work-container-btn-active' : 'work-container-btn'}>3</button> */}
+                <button onClick={handleClickWorkThree} className={work === infoWorkThree ? 'work-container-btn-active' : 'work-container-btn'}>3</button>
             </div>
         </div>
     </div>
