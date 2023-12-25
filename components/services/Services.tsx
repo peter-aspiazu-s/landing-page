@@ -12,8 +12,8 @@ export const Services:FC = ():JSX.Element => {
             <div className='services_container-card'>
                 <ServiceCard 
                     category='Landing Page' 
-                    oldPrice={200}
-                    newPrice={160}
+                    // oldPrice={200}
+                    // newPrice={160}
                     domainAmount={1}
                     acountEmail='25'
                     gigas='6 GB'
@@ -24,17 +24,18 @@ export const Services:FC = ():JSX.Element => {
                     textFour='Datos de contacto'
                     textFive='Información adicional relevante'
                     textSix='Soporte técnico y asistencia'
-                    textSeven='Incluye Logotipo'
-                    textDB='Registros en Base de datos desde $50'
-                    buttonLink='https://wa.link/gy97zg'
+                    textSeven='Logotipo (costo adicional)'
+                    textDB='Registros en Base de datos (costo adicional)'
+                    buttonLink='https://wa.link/cv5nb6'
                 />
 
                 <ServiceCard 
                     category='Sitio Web' 
-                    oldPrice={312.5}
-                    newPrice={250}
-                    domainAmount={6}
-                    gigas='15 GB'
+                    // oldPrice={312.5}
+                    // newPrice={250}
+                    domainAmount={1}
+                    acountEmail='25'
+                    gigas='6 GB'
                     ram='1 GB'
                     textOne='Diseño personalizado'
                     textTwo='Diseño responsivo'
@@ -42,15 +43,15 @@ export const Services:FC = ():JSX.Element => {
                     textFour='Optimización SEO (Básico)'
                     textFive='Formulario de contacto'
                     textSix='Soporte técnico y asistencia'
-                    textSeven='Incluye Logotipo'
-                    textDB='Registros en Base de datos desde $50'
-                    buttonLink='https://wa.link/h47d87'
+                    textSeven='Logotipo (costo adicional)'
+                    textDB='Registros en Base de datos (costo adicional)'
+                    buttonLink='https://wa.link/z38xca'
                     />
             
                 <ServiceCard 
                     category='E-Commerce' 
-                    oldPrice={625}
-                    newPrice={500}
+                    // oldPrice={625}
+                    // newPrice={500}
                     domainAmount={16}
                     gigas='40 GB'
                     ram='1 GB'
@@ -61,7 +62,7 @@ export const Services:FC = ():JSX.Element => {
                     textFive='Gestión de inventario y seguimiento de pedidos'
                     textSix='Soporte técnico y asistencia'
                     textSeven='Incluye Logotipo'
-                    buttonLink='https://wa.link/4ya0jq'
+                    buttonLink='https://wa.link/df9ps0'
                 />
             </div>
 

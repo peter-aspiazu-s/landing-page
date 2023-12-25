@@ -48,7 +48,7 @@ export const MainContent:FC<Props> = ({setValuePosition}):JSX.Element => {
         <div className='main-content_hosting'>💼Nuestros precios accesibles te permiten tener presencia en línea sin comprometer la calidad. Además, incluimos <strong>hosting y dominio por 1 año.</strong></div>
         <a 
           className='main-content_button' 
-          href="https://wa.link/iq3sg8" 
+          href="https://wa.link/r7f210" 
           target='_blank'
           ref={targetRef}
         >Contactar Ahora!</a>

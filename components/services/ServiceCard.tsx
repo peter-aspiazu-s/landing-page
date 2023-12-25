@@ -2,8 +2,8 @@ import {FC} from 'react';
 
 interface Props {
   category: string;
-  oldPrice: number;
-  newPrice: number;
+  oldPrice?: number;
+  newPrice?: number;
   domainAmount: number;
   acountEmail?: string;
   gigas: string;
@@ -42,8 +42,8 @@ export const ServiceCard:FC<Props> = ({
         <div className='service-card_category'>{category}</div>
         <div className='service-card_container'>
             <div className='service-card_desc'>20% DESCUENTO</div>
-            <div className='service-card_old-prince'>Precio normal ${oldPrice}</div>
-            <div className='service-card_new-prince'>${newPrice}</div>
+            {oldPrice && <div className='service-card_old-prince'>Precio normal ${oldPrice}</div>}
+            {newPrice && <div className='service-card_new-prince'>${newPrice}</div>}
             <div className='service-card_item'><strong>1 Dominio gratis</strong> el primer año</div>
             <div className='service-card_item'>
               <strong>Hosting</strong> para {domainAmount > 1 ? `${domainAmount} dominios` : `${domainAmount} dominio`}
